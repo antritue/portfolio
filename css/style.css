@@ -15,6 +15,26 @@ p {
     line-height: 30px;
 }
 
+h1 {
+    font-size: 4rem;
+    /* animation: type 3s steps(23);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    padding-right: 2px;
+    text-align: right; */
+}
+
+
+/* @keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 23ch;
+    }
+} */
+
 h2 {
     font-size: 2rem;
     text-transform: uppercase;
@@ -66,6 +86,23 @@ nav a:hover {
     text-decoration-thickness: 2px;
 }
 
+header .fa {
+    display: none;
+    transform: scale(2);
+}
+
+.header button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: block;
+    margin-right: 20px;
+}
+
+.show {
+    display: block;
+}
+
 .opening {
     padding-top: 60px;
     background: url('../img/opening-img.jpg') top no-repeat;
@@ -83,39 +120,13 @@ nav a:hover {
     text-align: right;
     display: block;
     width: 100%;
-    padding-right: 200px;
+    margin-right: 200px;
 }
 
 .btn-resume {
     font-size: 1.2rem;
-    margin: 10px 0;
+    margin-top: 25px;
 }
-
-
-/* Animation */
-
-
-/* .anim-typewriter {
-    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-@keyframes typewriter {
-    from {
-        width: 90%;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
-    }
-    to {
-        border-right-color: transparent;
-    }
-} */
 
 .section {
     padding: 6% 15%;
@@ -124,7 +135,6 @@ nav a:hover {
 .flex-container {
     flex-direction: row;
     display: flex;
-    align-items: center;
     padding: 50px 0;
 }
 
@@ -156,7 +166,6 @@ nav a:hover {
 .thumbnail {
     width: 100%;
     box-shadow: 0 0 10px rgb(0 0 0 / 15%);
-    height: 160px;
 }
 
 .thumbnail:hover {
@@ -280,6 +289,10 @@ h3 {
     font-size: 14px;
 }
 
+.overview ul {
+    margin-top: 15px;
+}
+
 .contact {
     background-color: lightgray;
 }
@@ -313,11 +326,87 @@ h3 {
     border: 2px solid var(--main-color);
     color: var(--main-color);
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 20%;
     margin-right: 20px;
 }
 
 .footer {
     background-color: black;
     color: white;
+}
+
+
+/*tablet*/
+
+@media only screen and (max-width: 960px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    nav {
+        margin: 0 30px
+    }
+    .welcome {
+        text-align: center;
+        margin-right: 0;
+    }
+    .prj-container {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+    .overview {
+        flex-direction: column;
+    }
+    .overview-left,
+    .overview-right {
+        width: 100%;
+    }
+    .overview-right {
+        padding: 0;
+    }
+    .modal-content {
+        width: 80%;
+    }
+}
+
+
+/* phone */
+
+@media only screen and (max-width: 767px) {
+    nav ul {
+        width: 100%;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 10px 10px rgb(0 0 0 / 15%);
+        display: none;
+    }
+    nav li {
+        display: block;
+        margin-left: 0;
+        padding: 10px 40px;
+    }
+    .header i {
+        display: block;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .left {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .right {
+        padding-left: 0;
+    }
+    .prj-container {
+        grid-auto-flow: row;
+        grid-template: none;
+    }
+    .btn-resume {
+        display: block;
+        margin: 25px auto 0;
+    }
 }

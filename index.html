@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,14 +15,16 @@
     <header>
         <div class="header">
             <nav>
-                <ul>
+                <ul id='nav-ul' class="topNav">
                     <li><a href="#about">About me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
+            <button onclick="toggle()">
+                <i class="fa fa-bars"></i>
+            </button>
         </div>
 
     </header>
@@ -40,7 +42,7 @@
                     <img src="img/dev.png" alt="">
                 </div>
                 <div class="right">
-                    <p>My name is An Nam Hoang Tri Tue and I am a front-end developer.</p>
+                    <p>My name is An Nam Hoang Tri Tue and I am a software developer.</p>
                     <p>I have worked with several front-end and back-end technologies.</p>
                     <p>Currently my skillset has me focus on front-end development, but I'm ready to tackle any challenge.</p>
                     <button class="btn btn-resume">Resume <i class="fas fa-download"></i></button>
@@ -217,7 +219,8 @@
             <p>Please feel free to get in touch with me via these social links below. I will reply to you as soon as possible. Thank you.</p>
             <div class="social-container">
                 <a href="mailto:antritue@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/antritue"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/antritue" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </section>
 
