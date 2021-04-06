@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,6 +14,7 @@
 <body>
     <header>
         <div class="header">
+            <a href="#opening" class="logo">Tue An</a>
             <nav>
                 <ul id='nav-ul' class="topNav">
                     <li><a href="#about">About me</a></li>
@@ -30,17 +30,19 @@
 
     </header>
     <main>
-        <section class="opening">
+        <!-- Opening -->
+        <section class="opening" id="opening">
             <div class="opening-container">
                 <h1 class="welcome animate__animated animate__fadeInLeft animate__delay-0.5s">Welcome to my portfolio</h1>
             </div>
         </section>
 
+        <!-- About me -->
         <section class="section" id="about">
             <h2 class="wow animate__animated animate__zoomIn">Who am I?</h2>
             <div class="flex-container">
                 <div class="left wow animate__animated animate__bounceInLeft animate__delay-1s">
-                    <img src="img/dev.png" alt="">
+                    <img src="img/dev.png" alt="" class="about-img">
                 </div>
                 <div class="right wow animate__animated animate__bounceInRight animate__delay-1s">
                     <p>My name is An Nam Hoang Tri Tue and I am a software developer.</p>
@@ -51,11 +53,12 @@
             </div>
         </section>
 
-        <section class="section projects wow animate__animated animate__fadeInUp" id="projects">
+        <!-- Projects -->
+        <section class="section projects" id="projects">
             <h2 class="wow animate__animated animate__zoomIn">Some of my projects</h2>
-            <div class="prj-container wow animate__animated animate__bounceInUp animate__delay-1s">
+            <div class="prj-container wow animate__animated animate__bounceIn animate__delay-1s">
                 <div class="item">
-                    <img src="img/hcl.jpg" alt="" class="thumbnail">
+                    <img src="img/hcl-min.jpg" alt="" class="thumbnail">
                     <p class="prj-name">HCL Vietnam</p>
                 </div>
                 <div class="item">
@@ -81,7 +84,7 @@
                 <h3>HCL Vietnam</h3>
                 <div class="overview">
                     <div class="overview-left">
-                        <img src="img/hcl.jpg" alt="">
+                        <img src="img/hcl-min.jpg" alt="">
                         <div class="button-nav">
                             <a href="https://antritue.github.io/hcl/" target="_blank">
                                 <button class="btn">Live demo</button>
@@ -203,33 +206,37 @@
             </div>
         </div>
 
-        <section class="section wow animate__animated animate__fadeInUp animate__delay-1s" id="skills">
+        <!-- Skills -->
+        <section class="section" id="skills">
             <h2 class="wow animate__animated animate__zoomIn">Technological skills</h2>
             <div class="skills-container">
-                <p>HTML <i class="fab fa-html5"></i></p>
-                <p>CSS <i class="fab fa-css3-alt"></i></p>
-                <p>Javascript <i class="fab fa-js"></i></p>
-                <p>Nodejs <i class="fab fa-node"></i></p>
-                <p>Java <i class="fab fa-java"></i></p>
-                <p>Git <i class="fab fa-git-alt"></i></p>
+                <p class="wow animate__animated animate__backInLeft animate__delay-1s">HTML <i class="fab fa-html5"></i></p>
+                <p class="wow animate__animated animate__backInRight animate__delay-1s">CSS <i class="fab fa-css3-alt"></i></p>
+                <p class="wow animate__animated animate__backInLeft animate__delay-2s">Javascript <i class="fab fa-js"></i></p>
+                <p class="wow animate__animated animate__backInRight animate__delay-2s">Nodejs <i class="fab fa-node"></i></p>
+                <p class="wow animate__animated animate__backInLeft animate__delay-3s">Java <i class="fab fa-java"></i></p>
+                <p class="wow animate__animated animate__backInRight animate__delay-3s">Git <i class="fab fa-git-alt"></i></p>
             </div>
         </section>
 
-        <section class="section contact wow animate__animated animate__fadeInUp animate__delay-1s" id="contact">
+        <!-- Contact -->
+        <section class="section contact" id="contact">
             <h2 class="wow animate__animated animate__zoomIn">Connect with me</h2>
-            <p>Please feel free to get in touch with me via these social links below. I will reply to you as soon as possible. Thank you.</p>
-            <div class="social-container">
+            <p class="wow animate__animated animate__fadeIn animate__delay-1s">Please feel free to get in touch with me via these social links below. I will reply to you as soon as possible. Thank you.</p>
+            <div class="social-container wow animate__animated animate__lightSpeedInLeft animate__delay-1s">
                 <a href="mailto:antritue@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://github.com/antritue" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </section>
 
+        <!-- Footer -->
         <footer class="section footer">
-            <div class="info-container">
+            <div class="info-container wow animate__animated animate__bounceInUp animate__delay-1s">
                 <p>Address: 193 Trung Kinh, Yen Hoa, Cau Giay, Ha Noi, Viet Nam</p>
                 <p>Email: antritue@gmail.com</p>
                 <p>Phone: (+84)90 2212 313</p>
+                <p class="copyright">© 2021 - Tue An</p>
             </div>
         </footer>
 
