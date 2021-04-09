@@ -65,6 +65,7 @@ header {
     border: 3px solid black;
     padding: 5px 10px;
     font-weight: bold;
+    margin-left: 20px;
 }
 
 .logo:hover {
@@ -432,6 +433,22 @@ h3 {
 .copyright {
     text-align: center;
     padding: 20px 0;
+}
+
+.animation-delay-500ms {
+    animation-delay: 500ms;
+}
+
+.animation-delay-1s {
+    animation-delay: 1s;
+}
+
+.animation-delay-1500ms {
+    animation-delay: 1500ms;
+}
+
+.animation-delay-2s {
+    animation-delay: 2s;
 }
 
 
