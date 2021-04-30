@@ -470,7 +470,6 @@ h3 {
     }
     .welcome {
         text-align: center;
-        margin-right: 0;
     }
     .prj-container {
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
@@ -497,6 +496,9 @@ h3 {
     /* h1 {
         font-size: 3rem;
     } */
+    .welcome {
+        margin-left: 0;
+    }
     nav ul {
         width: 100%;
         position: fixed;
